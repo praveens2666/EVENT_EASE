@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EventEase | Home</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">EventEase</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <h1 class="display-4 fw-bold mb-3">Make Your Event Unforgettable</h1>
+          <p class="lead mb-4">We plan weddings, corporate events, and birthdays with style!</p>
+          <a href="gallery.html" class="btn btn-primary btn-lg">View Our Work</a>
+        </div>
+        <div class="col-md-5 d-none d-md-block">
+          <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b1a5b?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded shadow" alt="Event">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm" style="cursor:pointer" onclick="openModal('Weddings', 'Elegant and memorable weddings tailored to your dreams.', 'https://www.w3schools.com/html/mov_bbb.mp4')">
+          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Weddings">
+          <div class="card-body">
+            <h5 class="card-title">Weddings</h5>
+            <p class="card-text">Elegant and memorable weddings tailored to your dreams.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm" style="cursor:pointer" onclick="openModal('Corporate Events', 'Professional and creative solutions for your business gatherings.', 'https://www.w3schools.com/html/movie.mp4')">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Corporate Events">
+          <div class="card-body">
+            <h5 class="card-title">Corporate Events</h5>
+            <p class="card-text">Professional and creative solutions for your business gatherings.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm" style="cursor:pointer" onclick="openModal('Birthdays', 'Fun and unique birthday parties for all ages.', 'https://www.w3schools.com/html/mov_bbb.mp4')">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Birthdays">
+          <div class="card-body">
+            <h5 class="card-title">Birthdays</h5>
+            <p class="card-text">Fun and unique birthday parties for all ages.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-primary text-white text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 EventEase. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i> FB</a>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i> IG</a>
+        <a href="#" class="text-white"><i class="bi bi-twitter"></i> TW</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
